@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background: #424f6f
+    background: #c4a2e4;
 }
 
 #container {
@@ -14,11 +14,11 @@ body {
     height: 400px;
     padding: 0;
     box-sizing: border-box;
-    background: #424f6f;
+    background: #c4a2e4;
 }
 
-:after 
-:before {
+*:after,
+*:before {
     box-sizing: inherit;
 }
 
@@ -34,7 +34,7 @@ body {
     margin: 50px auto 0;
     width: 180px;
     height: 220px;
-    background: white;
+    background: #f2fbf1;
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
 }
@@ -48,7 +48,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: white;
+    background: #f2fbf1;
     animation: floaty .2s infinite;
 }
 
@@ -69,30 +69,29 @@ body {
     height: 20px;
 }
 
-#spooky #body #eyes:before;
+#spooky #body #eyes:before,
 #spooky #body #eyes:after {
-    content: '';
+    content: ' ';
     display: block;
     width: 30px;
     height: 30px;
-    background: #252c49;
+    background: black;
     border-radius: 50%;
 }
 
-
 #spooky #body #mouth {
-    background: #232c49;
+    background: black;
     margin: 25px auto 0;
-    width: 60px;
+    width: 50px;
     height: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
 #spooky #body #mouth:before {
-    content: '';
+    content: ' ';
     display: block;
-    background: white;
+    background: #cf8a8a;
     margin-left: 20px;
     width: 10px;
     height: 10px;
@@ -109,16 +108,16 @@ body {
 #spooky #body #feet > *,
 #spooky #body #feet::before,
 #spooky #body #feet::after {
-    content:'';
+    content: ' ';
     width: 36px;
     height: 36px;
-    background: white;
+    background: #f2fbf1;
     border-radius: 50%;
 }
 
 #shadow {
     margin: -90px auto 0;
-    background: #252c49;
+    background: #7a85b4;
     width: 180px;
     height: 40px;
     border-radius: 50%;
@@ -141,6 +140,6 @@ body {
     }
 
     50% {
-        transform: scale(0);
+        transform: scale(0.8);
     }
 }
